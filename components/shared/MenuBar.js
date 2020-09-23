@@ -9,38 +9,38 @@ class MenuBar extends Component {
     render() {
         const { Item, ItemGroup, SubMenu } = Menu
         return (
-            <Menu className="menus" mode='horizontal'>
+            <Menu data-testid='nav-menu' className="menus" mode='horizontal'>
                 <Item className="menu-item" key={1}>
                     HOME
                 </Item>
-                <SubMenu key={3} title="DASHBOARD">
+                <SubMenu className="menu-item" key={3} title="DASHBOARD">
                     <ItemGroup>
                         <SubMenu title="DOCTOR" key={4}>
                         <ItemGroup>
-                        <Item className="menu-item" key={5}>
+                        <Item key={5}>
                             STATIC
                         </Item>
-                        <Item className="menu-item" key={6}>
+                        <Item key={6}>
                             DYNAMIC
                         </Item>
                         </ItemGroup>
                         </SubMenu>
                         <SubMenu title="MANAGEMENT" key={7}>
                         <ItemGroup>
-                        <Item className="menu-item" key={8}>
+                        <Item key={8}>
                             STATIC
                         </Item>
-                        <Item className="menu-item" key={9}>
+                        <Item key={9}>
                             DYNAMIC
                         </Item>
                         </ItemGroup>
                         </SubMenu>
                         <SubMenu title="ADMIN" key={10}>
                         <ItemGroup>
-                        <Item className="menu-item" key={11}>
+                        <Item key={11}>
                             STATIC
                         </Item>
-                        <Item className="menu-item" key={12}>
+                        <Item key={12}>
                             DYNAMIC
                         </Item>
                         </ItemGroup>
